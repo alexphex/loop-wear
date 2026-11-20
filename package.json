@@ -1,0 +1,12 @@
+{
+  "name": "loop-wear",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/main.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/main.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "tailwindcss": "^3.4.17"
+  }
+}

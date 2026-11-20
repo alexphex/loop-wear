@@ -1,0 +1,58 @@
+const display = ['"Bricolage Grotesque"', 'sans-serif'];
+const body = ['"DM Sans"', 'sans-serif'];
+
+module.exports = {
+  content: ['./*.php', './inc/**/*.php', './template-parts/**/*.php', './woocommerce/**/*.php', './assets/js/**/*.js'],
+  plugins: [require('@tailwindcss/forms')],
+  theme: {
+    extend: {
+      colors: {
+        'background': '#fdf8ff',
+        'surface': '#fdf8ff',
+        'surface-dim': '#ddd7ee',
+        'surface-variant': '#e5dff7',
+        'surface-container': '#f1ebff',
+        'surface-container-high': '#ebe5fd',
+        'surface-container-lowest': '#ffffff',
+        'on-surface': '#1c192a',
+        'on-surface-variant': '#434656',
+        'primary': '#003fe1',
+        'primary-container': '#2f5bff',
+        'on-primary-container': '#efefff',
+        'secondary': '#b90a5a',
+        'secondary-container': '#fe4c8c',
+        'tertiary': '#715d00',
+        'tertiary-fixed': '#ffe177',
+        'on-tertiary-fixed': '#231b00',
+        'on-tertiary-fixed-variant': '#554500',
+      },
+      borderWidth: { 3: '3px' },
+      fontFamily: {
+        'display-xl': display,
+        'display-lg': display,
+        'headline-lg': display,
+        'headline-md': display,
+        'headline-sm': display,
+        'label-lg': display,
+        'label-md': display,
+        'label-sm': display,
+        'body-lg': body,
+        'body-md': body,
+        'body-sm': body,
+      },
+      fontSize: {
+        'display-xl': ['72px', { lineHeight: '76px', letterSpacing: '-0.04em', fontWeight: '800' }],
+        'display-lg': ['56px', { lineHeight: '60px', letterSpacing: '-0.03em', fontWeight: '800' }],
+        'headline-lg': ['40px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'headline-md': ['28px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'headline-sm': ['22px', { lineHeight: '26px', letterSpacing: '0em', fontWeight: '700' }],
+        'label-lg': ['16px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '700' }],
+        'label-md': ['13px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '700' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.06em', fontWeight: '800' }],
+        'body-lg': ['18px', { lineHeight: '26px', letterSpacing: '-0.01em', fontWeight: '500' }],
+        'body-md': ['16px', { lineHeight: '24px', letterSpacing: '0em', fontWeight: '400' }],
+        'body-sm': ['14px', { lineHeight: '20px', letterSpacing: '0em', fontWeight: '400' }],
+      },
+    },
+  },
+};
