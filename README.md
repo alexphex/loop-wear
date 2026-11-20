@@ -5,7 +5,7 @@ Custom WooCommerce theme for a demo streetwear store.
 **Live demo:** https://YOUR-DEMO-URL
 This is a demo store. Orders are not processed and nothing is shipped.
 
-![Home](docs/screenshots/home.png)
+![Home](docs/Screenshot1.png)
 
 ## About
 
