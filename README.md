@@ -13,6 +13,8 @@ A classic PHP theme written from scratch for WooCommerce. The design (a neo-brut
 
 The project exists to practice and show WooCommerce theme development: template overrides, hooks and filters, AJAX fragments, and a Tailwind build pipeline.
 
+Without WooCommerce the theme shows a 503 notice on the front end and an error notice in the admin.
+
 ## Stack
 
 - WordPress 5.7+, WooCommerce, PHP 7.4+
@@ -46,6 +48,7 @@ loop-wear/
 │   ├── woocommerce.php           cart fragments, catalog settings
 │   ├── free-shipping-bar.php     free shipping progress bar
 │   └── demo.php                  demo mode
+│   └── requirements.php          check if woo is connected
 ├── src/input.css                 Tailwind source
 ├── template-parts/product-card.php
 ├── woocommerce/                  template overrides
@@ -56,6 +59,7 @@ loop-wear/
 │   └── myaccount/
 ├── front-page.php, page.php, index.php
 ├── header.php, footer.php, functions.php, style.css
+├── requirements-notice.php       fallback page
 ├── tailwind.config.js
 └── package.json
 ```
